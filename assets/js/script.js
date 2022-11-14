@@ -103,3 +103,26 @@ if (localStorage.getItem("theme") === "light_theme") {
   document.body.classList.remove("light_theme");
   document.body.classList.add("dark_theme");
 }
+
+const modal = document.querySelector(".modal");
+const trigger = document.querySelectorAll(".trigger");
+const closeButton = document.querySelector(".close-button");
+
+function toggleModal(context) {
+  modal.classList.toggle("show-modal");
+  const contextModal = document.querySelector("#modal-context");
+  contextModal.setAttribute("src", context);
+}
+
+function windowOnClick(event) {
+  if (event.target === modal) {
+    toggleModal();
+  }
+}
+
+trigger.forEach((item) => {
+  const ctx = item.getAttribute("data-context");
+  item.addEventListener("click", () => toggleModal(ctx));
+});
+closeButton.addEventListener("click", toggleModal);
+window.addEventListener("click", windowOnClick);
