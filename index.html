@@ -19,8 +19,6 @@
   <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png">
 
 
-  
-  
   <!-- 
     - custom css link
   -->
@@ -105,8 +103,6 @@
 
 
 
-
-
   <main>
     <!-- 
         - #HERO
@@ -177,7 +173,7 @@
       <section class="about" id="about">
 
         <figure class="about-banner">
-          <img src="./assets/images/about.png" alt="A man in a alice blue shirt with a thinking expression"
+          <img src="./assets/images/about.png" alt=""
             class="w-100">
         </figure>
 
@@ -418,18 +414,7 @@
 
       </section>
 
-      <!-- Modal -->
 
-      <div class="modal">
-        <div class="modal-content">
-          <span class="close-button">&times;</span>
-          <br />
-          <br />
-          <div class="contener">
-            <iframe class="responsive-iframe" id="modal-context"></iframe>
-          </div>
-        </div>
-      </div>
 
 
 
@@ -744,19 +729,20 @@
           </li>
 
           <li>
-            <a href="#" class="project-card">
+            <button class="trigger" data-context="">
+              <a class="project-card">
 
-              <figure class="card-banner">
-                <img src="./assets/images/project-1.png" class="w-100" alt="A macintosh on a yellow background.">
-              </figure>
+                <figure class="card-banner">
+                  <img src="./assets/images/project-1.png" class="w-100" alt="A macintosh on a yellow background.">
+                </figure>
+                <div class="card-content">
+                  <h3 class="h4 card-title">Lorem Ipsum Dolor 01</h3>
 
-              <div class="card-content">
-                <h3 class="h4 card-title">Lorem Ipsum Dolor 01</h3>
+                  <time class="publish-date" datetime="2022-04">June 2022</time>
+                </div>
 
-                <time class="publish-date" datetime="2022-04">April 2022</time>
-              </div>
-
-            </a>
+              </a>
+            </button>
           </li>
 
           <li>
@@ -769,7 +755,7 @@
               <div class="card-content">
                 <h3 class="h4 card-title">Lorem Ipsum Dolor 02</h3>
 
-                <time class="publish-date" datetime="2022-04">April 2022</time>
+                <time class="publish-date" datetime="2022-04">June 2022</time>
               </div>
 
             </a>
@@ -786,7 +772,7 @@
               <div class="card-content">
                 <h3 class="h4 card-title">Lorem Ipsum Dolor 03</h3>
 
-                <time class="publish-date" datetime="2022-04">April 2022</time>
+                <time class="publish-date" datetime="2022-04">June 2022</time>
               </div>
 
             </a>
@@ -803,7 +789,7 @@
               <div class="card-content">
                 <h3 class="h4 card-title">Lorem Ipsum Dolor 04</h3>
 
-                <time class="publish-date" datetime="2022-04">April 2022</time>
+                <time class="publish-date" datetime="2022-04">June 2022</time>
               </div>
 
             </a>
@@ -820,7 +806,7 @@
               <div class="card-content">
                 <h3 class="h4 card-title">Lorem Ipsum Dolor 05</h3>
 
-                <time class="publish-date" datetime="2022-04">April 2022</time>
+                <time class="publish-date" datetime="2022-04">June 2022</time>
               </div>
 
             </a>
@@ -837,7 +823,7 @@
               <div class="card-content">
                 <h3 class="h4 card-title">Lorem Ipsum Dolor 06</h3>
 
-                <time class="publish-date" datetime="2022-04">April 2022</time>
+                <time class="publish-date" datetime="2022-04">June 2022</time>
               </div>
 
             </a>
@@ -854,7 +840,7 @@
               <div class="card-content">
                 <h3 class="h4 card-title">Lorem Ipsum Dolor 07</h3>
 
-                <time class="publish-date" datetime="2022-04">April 2022</time>
+                <time class="publish-date" datetime="2022-04">June 2022</time>
               </div>
 
             </a>
@@ -1047,7 +1033,24 @@
   </main>
 
 
+  <!-- Modal -->
 
+  <div class="modal">
+    <div class="modal-content">
+      <span class="close-button">&times;</span>
+      <br />
+      <br />
+      <div class="contener">
+        <iframe class="responsive-iframe" id="modal-context"></iframe>
+      </div>
+     <center>
+      <h1 class="h1 logo">
+        <a style="color: black;">KM<span>TI</span></a>
+      </h1>
+     </center>
+    </div>
+    
+  </div>
 
 
   <!-- 
@@ -1064,7 +1067,7 @@
       </p>
 
       <p class="copyright">
-        &copy; KMTI <a href="#">Periode Kepengurusan</a>. 2022/2023
+        &copy; KMTI <a href="#">Periode Kepengurusan</a> 2022/2023
       </p>
 
     </div>
@@ -1096,6 +1099,8 @@
   -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
 
 </body>
 
