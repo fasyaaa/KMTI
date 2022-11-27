@@ -1343,13 +1343,13 @@ textarea.input-field {
 
 }
 .responsive{
-  padding-top: 60%; /* 3:2 Aspect Ratio */
+  padding-top: 50%; /* 3:2 Aspect Ratio */
 }
 .contener {
   position: relative;
   width: 100%;
   overflow: hidden;
-  padding-top: 60%; /* 3:2 Aspect Ratio */
+  padding-top: 50%; /* 3:2 Aspect Ratio */
 }
 
 .responsive-iframe {
