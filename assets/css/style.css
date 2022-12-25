@@ -200,6 +200,11 @@ body.active { overflow: hidden; }
 
 .w-100 { width: 100%; }
 
+.logo-kmti,
+.logo-aboutus{
+  width: 100%;
+}
+
 .btn {
   max-width: max-content;
   color: var(--color-primary);
@@ -504,6 +509,11 @@ main { overflow-x: hidden; }
   gap: 30px;
 }
 
+.stats-card p{
+  color: #fff;
+  font-size: 20px;
+}
+
 .stats-card {
   background: var(--bg-secondary);
   display: flex;
@@ -517,6 +527,14 @@ main { overflow-x: hidden; }
 
 .stats-card:is(:hover, :focus) { transform: translateY(-5px); }
 
+.stats-card .card-iconn {
+  background: var(--raw-seinna);
+  width: 60px;
+  height: 60px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+}
 .stats-card .card-icon {
   background: var(--raw-seinna);
   width: 60px;
@@ -526,6 +544,10 @@ main { overflow-x: hidden; }
   border-radius: 50%;
 }
 
+.stats-card .card-iconn img {
+  width: 70%;
+  filter: invert(1);
+}
 .stats-card .card-icon img {
   width: 70%;
   filter: invert(1);
@@ -537,10 +559,9 @@ main { overflow-x: hidden; }
   text-align: center;
 }
 
-.stats-card .card-title strong {
+.stats-card .card-title p {
   display: block;
   color: var(--color-primary);
-  font-size: initial;
   line-height: 1.3;
   margin-top: 5px;
 }
@@ -926,24 +947,101 @@ textarea.input-field {
 \*-----------------------------------*/
 
 /**
- * responsive for larger than 550px screen
+ * responsive for small than 370px screen
  */
-
-@media (min-width: 550px) {
-
-  /**
+@media (max-width: 370px){
+   
+    /**
    * REUSED STYLE
    */
 
-  .container {
-    max-width: 550px;
-    margin-inline: auto;
+   .container {
+    max-width: 370px;
   }
 
-  .section-title { max-width: 380px; }
+  .section-title { max-width: 200px; }
+
+    /**
+   * HERO BANNER
+   */
+   .hero-title{
+    font-size: 20px;
+   }
+
+  .hero-banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .btn-primary{
+    width: 150px;
+    font-size: 10px;
+  }
+
+  .logo-kmti{
+    width: 260px;
+  }
 
 
 
+  /**
+   * DIVISI
+   */
+
+  .stats-list{
+  }
+
+  .stats-card{
+    width: 270px;
+    height: 100px;
+  }
+
+  .ion-icon-ph{
+    font-size: 8px;
+    margin-left: 8px;
+  }
+
+  .stats-card .card-iconn {
+    width: 30px;
+    height: 30px;
+    margin-right: 13%;
+    it
+   }
+  .stats-card .card-icon {
+    width: 45px;
+    height: 30px;
+   }
+
+  .card-title{
+    font-size: 25px
+  }
+
+  .card-title p{
+    font-size: 10px;
+    color: #fff;
+  }
+
+  /**
+   * ABOUT US
+   */
+   .about-banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+
+  .logo-aboutus{
+    width: 70%;
+  }
+
+  .section-subtitle{
+    font-size: 10px;
+  }
+
+  .section-text{
+    font-size: 10px;
+  }
   /**
    * PROJECT
    */
@@ -955,11 +1053,281 @@ textarea.input-field {
 
   .project-list > li:first-child { column-span: all; }
 
+
+
+  /**
+   * IT RESEARCH
+   */
+
+  .load-more{
+    font-size: 5px;
+  }
+
+
+  .card-content .card-title{
+    font-size: 5px;
+  }
+  .card-content .publish-date{
+    font-size: 5px;
+  }
+  /**
+   * CONTACT
+   */
+  .contact{
+    display: list-item;    
+  }
+
+  .contact-form{
+    left: -65%;
+    position: relative;
+    width: 70%;
+  }
+
+  .section-title{
+    font-size: 20px;
+  }
+
+  .contact-item-title{
+    font-size: 10px;
+  }
+
+  .contact-info{
+    font-size: 10px;
+  }
+
+}
+
+.contener{
+  position: relative;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 500px;
+  border: none;
+  }
+
+
+
+@media  (min-width: 370px){
+  /**
+* PROJECT
+*/
+
+.project-list {
+column-count: 2;
+column-gap: 25px;
+}
+
+.project-list > li:first-child { column-span: all; }
+
+
+/**
+* REUSED STYLE
+*/
+
+.container {
+max-width: 370px;
+margin-inline: auto;
+}
+
+.section-title { max-width: 200px; }
+
+
+
+
 }
 
 
 
+/**
+ * responsive for larger than 550px screen
+ */
 
+ @media screen and (min-width: 371px) and (max-width: 550px) {
+
+  /**
+   * REUSED STYLE
+   */
+
+  .container {
+    max-width: 550px;
+  }
+
+  .section-title { max-width: 380px; }
+
+  /**
+   * HERO BANNER
+   */
+   .hero-title{
+    font-size: 20px;
+   }
+
+  .hero-banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .btn-primary{
+    width: 150px;
+    font-size: 10px;
+  }
+
+  .logo-kmti{
+    width: 260px;
+  }
+
+  /**
+   * DIVISI
+   */
+
+  .stats {
+  }
+
+  .stats-card .card-iconn {
+    width: 50px;
+    height: 50px;
+   }
+  .stats-card .card-icon {
+    width: 70px;
+    height: 50px;
+   }
+
+  .card-title{
+    font-size: 20px
+  }
+
+  .card-title p{
+    color: #fff;
+    font-size: 10px;
+  }
+
+  .stats-list{
+  }
+  .stats-card{
+    width: 350px;
+    height: 100px;
+  }
+
+  /**
+   * ABOUT US
+   */
+   .about-banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+
+  .logo-aboutus{
+    width: 70%;
+  }
+
+  .section-subtitle{
+    font-size: 10px;
+  }
+
+  .section-text{
+    font-size: 10px;
+  }
+  /**
+   * PROJECT
+   */
+
+  .project-list {
+    column-count: 2;
+    column-gap: 25px;
+  }
+
+  .project-list > li:first-child { column-span: all; }
+
+
+
+  /**
+   * IT RESEARCH
+   */
+
+  .load-more{
+    font-size: 10px;
+  }
+
+  .card-content .card-title{
+    font-size: 7px;
+  }
+  .card-content .publish-date{
+    font-size: 7px;
+  }
+  /**
+   * CONTACT
+   */
+  .contact{
+    display: list-item;    
+  }
+
+  .contact-form{
+    left: -40%;
+    position: relative;
+    width: 70%;
+  }
+
+  .section-title{
+    font-size: 20px;
+  }
+
+  .contact-item-title{
+    font-size: 10px;
+  }
+
+  .contact-info{
+    font-size: 10px;
+  }
+
+}
+  @media  (min-width: 550px){
+      /**
+   * PROJECT
+   */
+
+  .project-list {
+    column-count: 2;
+    column-gap: 25px;
+  }
+
+  .project-list > li:first-child { column-span: all; }
+
+
+    /**
+   * MODAL
+   */
+
+  .modal-content{
+  }
+    /**
+   * REUSED STYLE
+   */
+
+   .container {
+    max-width: 550px;
+    margin-inline: auto;
+  }
+
+  .section-title { max-width: 380px; }
+
+  .contener{
+    position: relative;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 500px;
+    border: none;
+    }
+  
+
+
+  }
 
 /**
  * responsive for larger than 768px screen
@@ -1042,8 +1410,6 @@ textarea.input-field {
     --section-padding: 100px;
 
   }
-
-
 
   /**
    * REUSED STYLE
