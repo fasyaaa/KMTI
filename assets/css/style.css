@@ -185,7 +185,12 @@ body.active { overflow: hidden; }
 }
 
 .h2,
-.h3,
+
+.h5{
+  color: var(--color-primary);
+  font-family: var(--ff-poppins);
+  line-height: 1.2;
+}
 .h4 {
   color: var(--color-primary);
   font-family: var(--ff-poppins);
@@ -1053,6 +1058,14 @@ textarea.input-field {
 
   .project-list > li:first-child { column-span: all; }
 
+  /* PHOTO CARD */
+
+  .card-list{
+    width: 70px;
+    height: 100px;
+    background-color: white;
+
+  }
 
 
   /**
@@ -1079,6 +1092,7 @@ textarea.input-field {
 
   .contact-form{
     left: -65%;
+    display: end;
     position: relative;
     width: 70%;
   }
@@ -1265,11 +1279,11 @@ margin-inline: auto;
     display: list-item;    
   }
 
-  .contact-form{
+  /* .contact-form{
     left: -40%;
     position: relative;
     width: 70%;
-  }
+  } */
 
   .section-title{
     font-size: 20px;
